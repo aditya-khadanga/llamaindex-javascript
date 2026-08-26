@@ -116,3 +116,22 @@ manual_rag().catch(console.error);
 
 // put llm and embedding model into a ServiceContext object
 
+
+// Load Documents
+//       ↓
+// Create Embeddings
+//       ↓
+// Create Vector Index
+//       ↓
+// Create Retriever
+//       ↓
+// Retrieve Relevant Chunks
+//       ↓
+// Pass Context + Query to LLM
+//       ↓
+// Generate Answer
+//       ↓
+// Display Result
+
+// The main() function hides these steps behind 
+// index.asQueryEngine(), while manual_rag() exposes every component so you can customize prompts, retrieval behavior, embeddings, and response generation.
